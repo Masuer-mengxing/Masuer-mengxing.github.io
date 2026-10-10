@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masuer Abdulloeva (mengxing) — Application Security</title>
+<meta name="description" content="Application security engineer and bug bounty hunter from Dushanbe, Tajikistan. CVE-2026-103690 — SQL injection in itsourcecode Leave Management System 1.0.">
+<style>
+:root{--bg:#0d1117;--panel:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#2f81f7;--red:#f85149}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:52px 24px 40px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+header h1{margin:0;font-size:1.95rem;letter-spacing:.2px}
+.handle{color:var(--muted);font-weight:400}
+.tagline{color:var(--muted);margin:.45rem 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.2rem 0 2.4rem}
+.chip{border:1px solid var(--border);border-radius:999px;padding:.28rem .85rem;font-size:.86rem;color:var(--text)}
+.chip:hover{border-color:var(--accent);text-decoration:none}
+h2{font-size:1.15rem;border-bottom:1px solid var(--border);padding-bottom:.4rem;margin:2.4rem 0 .9rem}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{border:1px solid var(--border);padding:.55rem .7rem;text-align:left;vertical-align:top}
+th{background:var(--panel);font-weight:600;white-space:nowrap}
+code{background:var(--panel);border:1px solid var(--border);border-radius:6px;padding:.08rem .35rem;font-size:.84em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.badge{display:inline-block;background:rgba(248,81,73,.14);color:var(--red);border:1px solid rgba(248,81,73,.4);border-radius:6px;padding:0 .45rem;font-size:.8rem;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:nowrap}
+.note{color:var(--muted);font-size:.86rem}
+ul{padding-left:1.25rem;margin:.5rem 0}
+li{margin:.3rem 0}
+footer{margin-top:3rem;border-top:1px solid var(--border);padding-top:1rem;color:var(--muted);font-size:.84rem}
+@media (max-width:640px){table{font-size:.8rem}th,td{padding:.4rem .45rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Masuer Abdulloeva <span class="handle">(mengxing)</span></h1>
+  <p class="tagline">Application Security Engineer · Bug Bounty Hunter · Dushanbe, Tajikistan</p>
+  <div class="chips">
+    <a class="chip" href="https://github.com/Masuer-mengxing">GitHub</a>
+    <a class="chip" href="https://www.linkedin.com/in/mengxing">LinkedIn</a>
+    <a class="chip" href="https://hackerone.com/mengxing">HackerOne</a>
+    <a class="chip" href="https://www.cve.org/CVERecord?id=CVE-2026-103690">CVE-2026-103690</a>
+    <a class="chip" href="mailto:masuer.abdulloeva@proton.me">Email</a>
+  </div>
+</header>
+
+<h2>CVE track record</h2>
+<p>Third-party verifiable disclosures. Every entry below can be cross-checked against the CVE Program, NVD and the assigning CNA — this table is the anchor of everything else on this page.</p>
+<table>
+  <thead>
+    <tr><th>CVE ID</th><th>Year</th><th>Type</th><th>Affected product</th><th>Role</th><th>CVE record</th><th>Disclosure / credit</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="badge">CVE-2026-103690</span></td>
+      <td>2026</td>
+      <td>SQL Injection <span class="note">(CWE-89)</span></td>
+      <td>itsourcecode Leave Management System 1.0<br><span class="note"><code>/module/leave/controller.php</code>, <code>LEAVEID</code> parameter</span></td>
+      <td>Independent discovery<br><span class="note">credited as <strong>mengxing</strong></span></td>
+      <td><a href="https://www.cve.org/CVERecord?id=CVE-2026-103690">cve.org</a> ·<br><a href="https://nvd.nist.gov/view/vuln/detail?vulnId=CVE-2026-103690">NVD</a></td>
+      <td><a href="https://vuldb.com/vuln/412559">VulDB VDB-412559</a><br><span class="note">CNA · published 2026-10-01</span></td>
+    </tr>
+  </tbody>
+</table>
+<p class="note">Full technical write-up: <a href="https://github.com/Masuer-mengxing/CVE-2026-103690">github.com/Masuer-mengxing/CVE-2026-103690</a></p>
+
+<h2>Write-ups &amp; code</h2>
+<ul>
+  <li><strong><a href="https://github.com/Masuer-mengxing/CVE-2026-103690">CVE-2026-103690 — disclosure write-up</a></strong>: SQL injection in the leave module of itsourcecode Leave Management System 1.0; timeline, remediation and references.</li>
+  <li><span class="note">More write-ups in progress — this section doubles as the blog index.</span></li>
+</ul>
+
+<h2>Research focus</h2>
+<ul>
+  <li>Web &amp; API security — injection classes, authentication and access-control flaws</li>
+  <li>Active Directory attack paths — kerberoasting, delegation abuse, ADCS misconfigurations</li>
+  <li>Secure-coding education for junior developers — co-organizer of the OWASP Dushanbe meetup; captain of CTF team <em>Zarnisor</em></li>
+</ul>
+
+<h2>Now</h2>
+<p>Building a public bug-bounty track record on <a href="https://hackerone.com/mengxing">HackerOne</a> as <strong>@mengxing</strong>.</p>
+
+<footer>
+  All research is performed against locally hosted instances only and disclosed through CVE Numbering Authorities.<br>
+  © 2026 Masuer Abdulloeva (mengxing)
+</footer>
+
+</div>
+</body>
+</html>
